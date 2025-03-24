@@ -9,7 +9,7 @@ export default function Map() {
         console.log(info_window)
         islands.map((x)=> {x.style.opacity=0})
         info_window.map((x)=> {x.style.opacity=0.6})
-        islands.map((x,y)=> {x.addEventListener('mouseenter', ()=> {x.style.opacity=0.6;info_window[y].style.opacity=1})})
+        islands.map((x,y)=> {x.addEventListener('mouseenter', ()=> {x.style.opacity=0.65;info_window[y].style.opacity=1})})
         islands.map((x,y)=> {x.addEventListener('mouseleave', ()=> {x.style.opacity=0;info_window[y].style.opacity=0.6})})
       }, []);
   return (
